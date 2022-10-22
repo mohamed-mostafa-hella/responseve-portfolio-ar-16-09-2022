@@ -1,0 +1,143 @@
+
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background: cadetblue;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: yellow 5px solid;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+header li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand{
+    float: right;
+}
+
+header #brand h1{
+    margin: 0;
+    color: yellow;
+}
+
+header nav{
+    float: left;
+    margin-top: 10px;
+}
+
+header .curent a{
+    color: yellow;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: white;
+    border-bottom: yellow 2px solid;
+}
+#cass{
+    min-height: 600px;
+    background: url("../img/Coding workshop-cuate.png") no-repeat center;
+    background-size: cover;
+}
+
+#newsleter{
+    padding: 15px;
+    color: white;
+    background: wheat;
+}
+
+#newsleter h1{
+    float: right;
+}
+#newsleter form{
+    float: left;
+    margin-top: 15px;
+}
+
+#newsleter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button{
+    height: 38px;
+    background: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: right;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+footer{
+    padding: 8px;
+    /* margin-top: 10px; */
+    color: white;
+    background-color: rgb(52, 92, 93);
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media(max-width:768px) {
+
+    header #brand,
+    header nav,
+    header nav li,
+    #newsleter h1,
+    #newsleter form,
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #newsleter .button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsleter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+}
